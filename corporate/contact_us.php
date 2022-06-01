@@ -30,16 +30,16 @@
             </a>
         
             <nav class="navbar borderYtoX">
-                <a href="corporate.html#home">Home</a>
-                <a href="corporate.html#howworks">How it works</a>
-                <a href="corporate.html#solution">Solution</a>
-                <a href="corporate.html#pricing">Pricing</a>
+                <a href="index.php#home">Home</a>
+                <a href="index.php#howworks">How it works</a>
+                <a href="index.php#solution">Solution</a>
+                <a href="index.php#pricing">Pricing</a>
             </nav>
         
         
             <div class="icons">
                 <img src="assets/images/bars.svg" data-swap="assets/images/times.svg" data-src="assets/images/bars.svg" id="menu-bars" alt="toggle-bars"/>
-                <a href="contact_us.html" class="contact-us">
+                <a href="contact_us.php" class="contact-us">
                     CONTACT US
                 </a>
             </div>

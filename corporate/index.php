@@ -39,7 +39,7 @@
         
             <div class="icons">
                 <img src="assets/images/bars.svg" data-swap="assets/images/times.svg" data-src="assets/images/bars.svg" id="menu-bars" alt="toggle-bars"/>
-                <a href="contact_us.html" class="contact-us">
+                <a href="contact_us.php" class="contact-us">
                     CONTACT US
                 </a>
             </div>

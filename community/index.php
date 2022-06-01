@@ -50,7 +50,7 @@
                   <hr>
                   <button type="button" class="btn w-100">Let's make money</button>
                   <span>Already registered?
-                      <a href="./contact_us.html">Sign In?</a>
+                      <a href="./contact_us.php">Sign In?</a>
                   </span>
 
                   <span class="d-block">Or</span>
