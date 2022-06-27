@@ -1,6 +1,6 @@
-# new gopamine community
+# gopamine final update
 
-new gopamine community
+gopamine final update
 
 ## Getting started
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/abdulrehmann/new-gopamine-community.git
+git remote add origin https://gitlab.com/abdulrehmann/gopamine-final-update.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/abdulrehmann/new-gopamine-community/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/abdulrehmann/gopamine-final-update/-/settings/integrations)
 
 ## Collaborate with your team
 

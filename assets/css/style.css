@@ -5,7 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    transition: all .3s linear;
+    /* transition: all .3s linear; */
 }
 
 a,h1,h2,h3,h4,h5,p{
@@ -56,9 +56,11 @@ html{
     padding-bottom: 8.7rem;
     position: relative;
     z-index: 1;
+    padding: 3.6rem 0;
+    min-height: 75.4rem;
 }
 
-.hero-section::before{
+/* .hero-section::before{
     content: '';
     position: absolute;
     height: 11.5rem;
@@ -70,9 +72,9 @@ html{
     bottom: 0;
     left: 0;
     z-index: -1;
-}
+} */
 
-.hero-section::after{
+/* .hero-section::after{
     content: '';
     position: absolute;
     height: 6.4rem;
@@ -85,21 +87,21 @@ html{
     left: 50%;
     transform: translate(-50%,0);
     z-index: 0;
-}
+} */
 
 
 .hero-section .content{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: minmax(0, 83.2rem) minmax(0, 46.8rem);
     justify-content: space-between;
-    gap: 5.3rem;
-    margin-top: 1.3rem;
+    gap: 3.4rem;
     position: relative;
     z-index: 1;
+    margin-top: 4.8rem;
 }
 
 
-.hero-section .content::before{
+/* .hero-section .content::before{
     content: '';
     position: absolute;
     height: 5rem;
@@ -111,70 +113,55 @@ html{
     top: 100%;
     left: 98%;
     z-index: -1;
-}
-
-.hero-section .logo{
-    margin-top: 1.8rem;
-}
-
-.hero-section .content .left-content{
-    height: auto;
-    padding-top: 9.8rem;
-}
+} */
 
 
-.hero-section .content .left-content .text p,
-.hero-section .content .left-content .text h2{
-    
+
+.hero-section .content .left-content .text h1{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 3rem;
-    line-height: 4rem;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.1rem;
+    color: #FFFFFF;
+
+    margin-bottom: 3.3rem;
+}
+
+.hero-section .content .left-content .text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
     color: #FFFFFF;
 }
 
+
 .hero-section .content .left-content .text h2{
-    margin-top: 6rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #FFFFFF;
 }
 
 
-.hero-section .content .left-content .icons-btns{
+.hero-section .content .left-content .social-icons{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3.5rem;
-    margin-top: 4.7rem;
+    gap: 3.9rem;
     flex-wrap: wrap;
+
+    margin-top: 2.4rem;
+    margin-bottom: 5rem;
 }
 
-.hero-section .content .left-content .icons{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 1rem;
-}
+.hero-section .content .left-content .social-icons img{
+    height: 3.8rem;
+    width: 3.8rem;
 
-.hero-section .content .left-content .icons a{
-    height: 2.8rem;
-    width: 4.4rem;
-    border-radius: 2rem;
-    padding: 8px, 16px, 8px, 16px;
-
-    background: #FFFFFF;
-    border: 1px solid #EDEDF2;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-size: 1.4rem;
-}
-
-.hero-section .content .left-content .icons a:hover{
-    border: 2px solid var(--color-pink);
 }
 
 .hero-section .content .right-content .contact-form{
@@ -183,6 +170,22 @@ html{
     border-radius: 10px;
     padding: 4rem 3rem;
     max-width: 46.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .content .right-content .contact-form::before{
+    content: '';
+    position: absolute;
+    height: 12.7rem;
+    width: 12.7rem;
+    background-image: url(../images/dots.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: -10%;
+    right:102% ;
+    z-index: -1;
 }
 
 .hero-section .content .right-content .contact-form .form-heading{
@@ -272,26 +275,22 @@ html{
     color: #5663DA;
 }
 
-.hero-section .content .contact-form .icons{
+/* .hero-section .content .contact-form .icons{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+ */
 
-.hero-section .content .contact-form .icons img{
-    height: 7.8rem;
-    width: 7.8rem;
-}
 
-.hero-section .content .right-content .app-btns{
+.hero-section .content .app-btns{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 2.8rem;
 }
 
-.hero-section .content .right-content .app-btns a{
+.hero-section .content .app-btns a{
     display: inline-block;
     height: 5rem;
     width: 16.9rem;
@@ -306,23 +305,51 @@ html{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.hero-section .content .right-content .app-btns a:hover{
-    border: 1px solid var(--color-pink);
-}
 
-.hero-section .content .right-content .app-btns a img{
+
+.hero-section .content .app-btns a img{
     height: 100%;
 }
 
+.hero-section .content .community-sign-google{
+    height: 5rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    /* text-transform: uppercase; */
+    color: #000000;
+}
+
+.hero-section .content .community-sign-google img{
+    height: 3rem; 
+    width: 3rem;
+}
+
+.like-section{
+    padding-top: 7rem;
+    padding-bottom: 8.6rem;
+    overflow: hidden;
+}
 
 
 .like-section .image{
-    width: 52rem;
+    max-width: 49.8rem;
+    width: 100%;
     height: auto;
     margin-left: auto;
     padding-right: 2.6rem;
-    transform: translateY(-4.8rem);
     position: relative;
     z-index: 1;
 }
@@ -330,11 +357,11 @@ html{
 .like-section .image::before{
     content: '';
     position: absolute;
-    left: -20%;
-    bottom: 10%;
-    height: 5rem;
-    width: 5rem;
-    background-image: url(../images/blue-circle.png);
+    right:-11%;
+    bottom: -10%;
+    height: 7.7rem;
+    width: 7.7rem;
+    background-image: url(../images/mimmmie-dots.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -350,57 +377,41 @@ html{
 .like-section .main-title{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 4.4rem;
-    line-height: 5.4rem;
-    background: linear-gradient(115.02deg, #FF1C96 14.72%, #FCBB45 151.16%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    max-width: 51rem;
-    margin-top: 10rem;
-
-    position: relative;
-    z-index: 0;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.6rem;
+    color: #353535;
+    max-width: 47rem;
 }
 
-.like-section .text-col{
-    position: relative;
-}
-.like-section .text-col::before{
-    content: '';
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    height: 10rem;
-    width: 10rem;
-    background-image: url(../images/red-circle.svg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
 
-.like-section p{
+
+.like-section .sec-text{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    font-size: 2rem;
+    line-height: 3rem;
     color: #3D3D4B;
-    max-width: 42rem;
+    margin-top: 3rem;
 }
 
 .like-section .bottom-content{
-    padding-top: 7.5rem;
+    padding-top: 1.7rem;
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-    padding-bottom: 4rem;
+    flex-direction: column;
+    gap: 5.6rem;
+}
+
+.like-section .bottom-content .bottom-content-txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    color: #3D3D4B;
+
+    margin-top: 1.7rem;
 }
 
 .like-section .bottom-content .buttons{
@@ -421,297 +432,151 @@ html{
 }
 
 .like-section .bottom-content .buttons .g-play{
-    height: 3.6rem;
-    width: 12rem;
-}
-
-.like-section .bottom-content .buttons .apple-store{
-    height: 4.5rem;
-    width: 14.9rem;
+    height: 4.6rem;
+    width: 15.6rem;
     border: 1px solid#A6A6A6;
     padding: 0.6rem 1rem;
 }
 
-
-/* Overlay Section Starts */
-
-
-
-.overlay .content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    min-height: 87rem;
-    position: relative;
-    padding: 5rem 0;
+.like-section .bottom-content .buttons .apple-store{
+    height: 4.6rem;
+    width: 15.6rem;
+    border: 1px solid#A6A6A6;
+    padding: 0.6rem 1rem;
 }
 
-.overlay .content .left-div{
-    height: 63.7rem;
-    width: 53%;
-    background: rgba(69, 42, 182, 1);
-    margin-top: 12.2rem;
-    position: absolute;
-    left: 0;
-    top: 0;
+.Les-marques-section{
+    min-height: 28.1rem;  
+    margin-bottom: 4.2rem;
+}
+
+.Les-marques-section .content{
+    background: #FFF3FF;
+    border-radius: 11px;
+    padding: 3.8rem 0;
+    text-align: center;
+    min-height: 28.1rem; 
 
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 5rem 8rem 5rem 2rem;
+    align-items: center;
 }
 
-.overlay .content .left-div::before{
-    content: '';
-    position: absolute;
-    bottom: 105%;
-    left: 3%;
-    height: 11.2rem;
-    width: 8.6rem;
-    background-image: url(../images/red-half-circle.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
-}
-
-.overlay .content .left-div::after{
-    content: '';
-    position: absolute;
-    bottom: -10%;
-    left: 30%;
-    height: 9.6rem;
-    width: 9.6rem;
-    background-image: url(../images/thumb.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-}
-
-.overlay .content .left-div h1{
+.Les-marques-section .content h1{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 5rem;
-    line-height: 6rem;
-    background: linear-gradient(115.02deg, #FF1C96 14.72%, #FCBB45 151.16%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #525252;
 
+    margin-bottom: 2.9rem;
 }
 
-.overlay .content .left-div p{
+.Les-marques-section .content p{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-    color: #FFFFFF;
-
-    margin-top: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #353535;
+    padding-bottom: 4.4rem;
+    max-width: 96.3rem;
 }
 
 
-.overlay .content .left-div .btn{
+.Les-marques-section .content .ça-minteresse{
     display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 23.8rem;
-    height: 4rem;
-
-    border: 2px solid #FFFFFF;
-    border-radius: 8px;
+    height: 4.7rem;
+    width: 17.5rem;
+    background: linear-gradient(90deg, #FF1C96 0%, #FCA650 100%);
+    border-radius: 4px;
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 1.3rem;
     text-transform: uppercase;
     color: #FFFFFF;
 
-    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
-.overlay .content .right-div{
-    height: 63.7rem;
-    width: 53%;
-    background: rgba(238, 85, 159, 1);
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5rem;
-}
 
-.overlay .content .right-div::before{
-    content: '';
-    position: absolute;
-    top: 105%;
-    right: 10%;
-    height: 14.8rem;
-    width: 14.8rem;
-    background-image: url(../images/pizza.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+.Donne-ton-avis .content{
 
+    padding: 6rem 2rem;
 
-.overlay .content .right-div p{
-    max-width: 26rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    text-align: center;
-
-    color: #000000;
-
-    padding-top: 12rem;
-    margin: 0 auto;
-}
-
-
-.you-only-like{
-    min-height: 47rem;
-    overflow: hidden;
-    padding: 3rem 0;
-}
-
-.you-only-like .content{
-    max-width: 80rem;
-    margin: 0 auto;
-    text-align: center;
+    background: linear-gradient(90deg, #FF1C96 0%, #FCA650 100%);
+    border-radius: 11px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    position: relative;
-    z-index: 1;
-}
-
-.you-only-like .content::before{
-    content: '';
-    position: absolute;
-    height: 9.6rem;
-    width: 9.6rem;
-    background-image: url(../images/music-icons.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    right: 110%;
-    top: 30%;
-    transform: translate(0, -30%);
-    z-index: -1;
-
+    justify-content: center;
 }
 
 
-.you-only-like .content::after{
-    content: '';
-    position: absolute;
-    height: 18rem;
-    width: 18rem;
-    background-image: url(../images/aid-box.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    left: 100%;
-    bottom: 10%;
-}
-
-
-.you-only-like .content h1{
+.Donne-ton-avis .content h1{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 5.2rem;
-    line-height: 5.6rem;
-    background: linear-gradient(115.02deg, #FF1C96 14.72%, #FCBB45 151.16%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #FFFFFF;
 
-    position: relative;
+    margin-bottom: 4.3rem;
 }
 
-.you-only-like .content h1::before{
-    content: '';
-    position: absolute;
-    height: 14.3rem;
-    width: 13.6rem;
-    background-image: url(../images/thunder.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    left: 110% ;
-    top: 10%;
-}
-
-
-.you-only-like .content h2{
+.Donne-ton-avis .content h2{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 2.1rem;
-    line-height: 3.6rem;
-    background: linear-gradient(115.02deg, #FF1C96 14.72%, #FCBB45 151.16%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.you-only-like .content h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.8rem;
-    color: #3D3D4B;
-    margin-top: 3rem;
-}
-
-.you-only-like .content p{
+.Donne-ton-avis .content p{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 3.2rem;
-    color: #3D3D4B;
-    
+    text-align: center;
+    color: #FFFFFF;
+
+    max-width: 94rem;
 }
 
-.you-only-like .content .btn{
+.Donne-ton-avis .content .Cest-part{
     display: inline-block;
-    height: 4.8rem;
-    width: 39.5rem;
-    border-radius: 0.8rem;
-    background: #5663DA;
+    height: 4.7rem;
+    width: 22.7rem;
+    border-radius: 4px;
+    background: #FFFFFF;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    color: #FF1C96;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-    margin: 4rem 0;
 
 }
 
@@ -721,22 +586,13 @@ html{
     background: #FF1C96;
     position: relative;
     z-index: 1;
+    padding: 4.8rem 0;
+    margin-top: 6.2rem;
+    overflow: hidden;
 }
 
 
-.comments-section::before{
-    content: '';
-    position: absolute;
-    height: 22.2rem;
-    width: 13.1rem;
-    background-image: url(../images/blue-dots.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    top: -17rem;
-    left: 0;
-    z-index: -1;
-}
+
 
 
 .comments-section::after{
@@ -748,21 +604,30 @@ html{
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    bottom: -5%;
-    right: 3%;
+    top: -5%;
+    right: 10%;
     z-index: -1;
 }
 
 .comments-section label{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 6rem;
-    line-height: 6.6rem;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3rem;
     color: #FFFFFF;
-    padding-top: 6rem;
 }
 
+.comments-section .text-para{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+
+    margin-top: 6rem;
+}
 
 .comments-section .cards{
     display: flex;
@@ -804,7 +669,47 @@ html{
     color: #FFFFFF;
 }
 
+.comments-section .botto-content{
+    display: flex;
+    gap: 7.2rem;
+}
 
+.comments-section .botto-content p{
+    max-width: 83.8rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+}
+
+.comments-section .botto-content .Rejoins-nous{
+    display: inline-block;
+    height: 4.7rem;
+    width: 22.7rem;
+    border-radius: 4px;
+    background: #FFFFFF;
+
+    padding: 1.7rem 2rem;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    color: #FF1C96;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+}
 
 /* Waiting section */
 .waiting-section{
@@ -874,6 +779,125 @@ html{
     margin-top: 3rem;
 
 }
+
+
+/* Contact Us Page */
+
+
+.main-contact-page .contact-banner{
+    background-image: url(../images/contact-banner.png);
+    background-size: cover;
+    background-position: center center;
+
+    height: 27.3rem;
+
+    display: flex;
+    padding-top: 8rem;
+    justify-content: center;
+}
+
+.main-contact-page .contact-banner h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    color: var(--color-pink);
+}
+
+.main-contact-page .contact-form{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+
+    min-height: 550px;
+    max-width: 850px;
+    border-radius: 16px;
+    margin: 0 auto;
+    transform: translateY(-14%);
+
+    padding: 4.6rem 3.9rem;
+    text-align: center;
+}
+
+.main-contact-page .contact-form > label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1.4rem;
+    color: #353535;
+    display: block;
+    text-align: center;
+}
+
+.main-contact-page .contact-form .fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.7rem;
+    margin-top: 3.7rem;
+}
+
+.main-contact-page .contact-form input{
+    height: 4.5rem;
+    width: 100%;
+
+
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+    padding: 1.7rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1rem;
+    color: var(--text);
+
+    margin: 0.85rem 0;
+}
+
+.main-contact-page .contact-form input::placeholder,
+.main-contact-page .contact-form textarea::placeholder
+{
+    color: var(--placeholder);
+}
+
+.main-contact-page .contact-form textarea{
+    min-height: 14.6rem;
+    resize: none;
+    width: 100%;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+
+    margin: 0.85rem 0;
+    padding: 1.7rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1rem;
+    color: var(--text);
+}
+
+.main-contact-page .contact-form #submit-btn{
+    height: 4.7rem;
+    width: 16.1rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #FF1C96 0%, #FCA650 100%);
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    color: var(--text-white);
+    border: none;
+    margin-top: 3.7rem;
+}
+
+
 
 /* Footer  Starts*/
 .footer{
@@ -1015,6 +1039,7 @@ html{
 
         .hero-section .content{
             grid-template-columns:1fr;
+            margin-top: 1.8rem;
         }
 
         .hero-section .content .right-content .contact-form {
@@ -1039,10 +1064,10 @@ html{
             padding: 0;
         }
 
-        .like-section .bottom-content {
+        /* .like-section .bottom-content {
             max-width: 64rem;
             margin: 0 auto;
-        }
+        } */
 
         .you-only-like .content::before {
             height: 6.6rem;
@@ -1174,6 +1199,10 @@ html{
     .waiting-section .content h1 {
         font-size: 3.6rem;
     }
+
+    .comments-section .botto-content{
+        flex-wrap: wrap;
+    }
    
 }
 
@@ -1213,6 +1242,22 @@ html{
         line-height: 2.6rem;
     }
 
+    .hero-section .content .left-content .social-icons {
+        gap: 1.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .content .app-btns {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .hero-section .content .left-content .text h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
 }
 
 @media (max-width: 420px){
@@ -1247,7 +1292,22 @@ html{
         height: 6.8rem;
         width: 6.8rem;
     }
+
+    .main-contact-page .contact-form{
+        padding: 3.6rem 1.9rem;
+    }
+
+    .main-contact-page .contact-form .fields{
+        
+        grid-template-columns:1fr;
+        gap: 0rem;
+        margin-top: 3.7rem;
+    }
+
+    
 }
+
+
 
     @media (max-width: 360px){
         .footer .copyright .links {
