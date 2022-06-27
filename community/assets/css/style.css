@@ -1258,6 +1258,44 @@ html{
         line-height: 3.6rem;
     }
 
+    .like-section .main-title {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .like-section {
+        padding-top: 5rem;
+        padding-bottom: 2.6rem;
+    }
+
+    .Les-marques-section .content h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .Donne-ton-avis .content h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .comments-section label {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+    }
+
+    .comments-section .text-para {
+        margin-top: 3rem;
+    }
+
+    .comments-section .cards {
+        margin-top: 4.8rem;
+        padding-bottom: 4rem;
+    }
+
+    .comments-section .botto-content {
+        gap: 3.2rem;
+    }
+
 }
 
 @media (max-width: 420px){
